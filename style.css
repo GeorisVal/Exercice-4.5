@@ -1,0 +1,53 @@
+/*  Brown: #805d33
+    Yellow-ish (buttons): #e4cfb0 */
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Prompt', sans-serif;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.mobile-hidden {
+    display: none;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro--text {
+    order: 2;
+    text-align: justify;
+}
+#intro--image-text {
+    order: 1;
+    justify-self: stretch;
+}
+
+#sec--carousel {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .mobile-hidden {
+        display:block;
+    }
+}
