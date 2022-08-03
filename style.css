@@ -16,6 +16,13 @@ body, html {
     font-family: 'Prompt', sans-serif;
 }
 
+button {
+    background-color: #e4cfb0;
+    padding: 0.8em;
+    border: none;
+    outline: none;
+}
+
 .round-corners {
     border-radius: 10px;
 }
@@ -33,12 +40,14 @@ body, html {
 .flex-column {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .max--width {
     max-width: 100%;
+}
+
+.intro-numbers {
+    padding-top: 2em;
 }
 
 #navbar {
@@ -47,7 +56,6 @@ body, html {
 
 #intro--text {
     order: 2;
-    text-align: justify;
     margin: 1em;
 }
 
@@ -65,20 +73,43 @@ body, html {
     margin-right: 4em;
 }
 
-.intro-numbers {
-    padding-top: 2em;
-}
-
 
 #sec--carousel {
     display: none;
 }
 
-button {
-    background-color: #e4cfb0;
-    padding: 0.8em;
-    border: none;
-    outline: none;
+#intro--h1 {
+    font-size: 30px;
+    text-align: left;
+    text-transform:uppercase;
+    line-height: 30px;
+    margin-bottom: 1.5em;
+}
+
+#sec--coffee-art {
+    background-color: #805d33;
+    text-align: right;
+    margin: 1em;
+}
+
+#coffee-art-text {
+    color: #FFF;
+    margin: 1em;
+}
+
+#coffee-art-text p {
+    font-weight: 200
+}
+
+#coffee-art-images-stack {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+}
+
+#coffee-art-image-1 {
+    grid-column: 1;
+    
 }
 
 @media (min-width: 1024px) {
