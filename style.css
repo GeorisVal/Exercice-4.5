@@ -16,6 +16,10 @@ body, html {
     font-family: 'Prompt', sans-serif;
 }
 
+.round-corners {
+    border-radius: 10px;
+}
+
 .flex-row {
     display: flex;
     align-items: center;
@@ -37,20 +41,34 @@ body, html {
     max-width: 100%;
 }
 
+#navbar {
+    justify-content: flex-start;
+}
+
 #intro--text {
     order: 2;
     text-align: justify;
+    margin: 1em;
 }
 
+
 #intro--image { 
-    width: 250px;
+    width: 275px;
     height: 300px;
+    border-radius: 50px;
+    margin-right: 3em
 }
 
 #intro--image-text {
     order: 1;
-    align-items: stretch;
+    text-align: right;
+    margin-right: 4em;
 }
+
+.intro-numbers {
+    padding-top: 2em;
+}
+
 
 #sec--carousel {
     display: none;
@@ -58,6 +76,9 @@ body, html {
 
 button {
     background-color: #e4cfb0;
+    padding: 0.8em;
+    border: none;
+    outline: none;
 }
 
 @media (min-width: 1024px) {
