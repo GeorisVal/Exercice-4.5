@@ -39,7 +39,7 @@ body, html {
 }
 #intro--image-text {
     order: 1;
-    justify-self: stretch;
+    align-items: stretch;
 }
 
 #sec--carousel {
