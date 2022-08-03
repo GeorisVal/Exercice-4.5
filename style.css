@@ -33,10 +33,20 @@ body, html {
     justify-content: center;
 }
 
+.max--width {
+    max-width: 100%;
+}
+
 #intro--text {
     order: 2;
     text-align: justify;
 }
+
+#intro--image { 
+    width: 250px;
+    height: 300px;
+}
+
 #intro--image-text {
     order: 1;
     align-items: stretch;
@@ -44,6 +54,10 @@ body, html {
 
 #sec--carousel {
     display: none;
+}
+
+button {
+    background-color: #e4cfb0;
 }
 
 @media (min-width: 1024px) {
