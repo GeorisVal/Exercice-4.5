@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="flickity.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
 <!--     <script src="swiper-bundle.min.js"></script>
     <script src="script.js" defer></script> -->
     <title>Valentin's Coffee</title>
@@ -56,37 +57,42 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget faucibus ante, sit amet eleifend lectus. Nulla ullamcorper rhoncus cursus. Vestibulum vestibulum vel justo vitae malesuada. Integer viverra placerat scelerisque. Nullam id massa quis tortor efficitur dignissim. Fusce ante est, venenatis ut dapibus vitae, malesuada a magna. Suspendisse a quam sodales, euismod nisi a, aliquam.</p>
         </div>
     </section>
-    <div id="sec--carousel" class="main-carousel">
-        <div id="carousel-1" class="carousel-cell">
-            <!-- <img src=""> -->
-            <h3 class="carousel-heading">Coffee Grains</h3>
-            <p class="carousel-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta in.</p>
-            <button class="carousel-button">See the product</button>
+    <div id="sec--carousel" class="swiper">
+        <div class="swiper-wrapper">
+            <div id="carousel-1" class="swiper-slide">
+                <img src=""> 
+                <h3 class="carousel-heading">Coffee Grains</h3>
+                <p class="carousel-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta in.</p>
+                <button class="carousel-button">See the product</button>
+            </div>
+            <div id="carousel-2" class="swiper-slide">
+                <img src="">
+                <h3 class="carousel-heading">Our Mugs</h3>
+                <p class="carousel-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                <button class="carousel-button">See the product</button>
+            </div>
+            <div id="carousel-3" class="swiper-slide">
+                <img src="">
+                <h3 class="carousel-heading">Our Place</h3>
+                <p class="carousel-text">Sed ut accumsan ante. Proin massa lorem, semper in.</p>
+                <button class="carousel-button">See the product</button>
+            </div>
+            <div id="carousel-4" class="swiper-slide">
+                <img src="">
+                <h3 class="carousel-heading">Our History</h3>
+                <p class="carousel-text">Praesent a nisi a quam suscipit fringilla. Vivamus cursus hendrerit magna, sed vulputate nisi.</p>
+                <button class="carousel-button">See the product</button>
+            </div>
+            <div id="carousel-5" class="swiper-slide">
+                <img src="">
+                <h3 class="carousel-heading">Our Experience</h3>
+                <p class="carousel-text">In sodales tortor eget erat convallis, a vestibulum massa commodo. Proin non nunc risus. Integer eget massa sed quam malesuada.</p>
+                <button class="carousel-button">See the product</button>
+            </div>
         </div>
-        <div id="carousel-2" class="carousel-cell">
-            <!-- <img src=""> -->
-            <h3 class="carousel-heading">Our Mugs</h3>
-            <p class="carousel-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-            <button class="carousel-button">See the product</button>
-        </div>
-        <div id="carousel-3" class="carousel-cell">
-            <!-- <img src=""> -->
-            <h3 class="carousel-heading">Our Place</h3>
-            <p class="carousel-text">Sed ut accumsan ante. Proin massa lorem, semper in.</p>
-            <button class="carousel-button">See the product</button>
-        </div>
-        <div id="carousel-4" class="carousel-cell">
-            <!-- <img src=""> -->
-            <h3 class="carousel-heading">Our History</h3>
-            <p class="carousel-text">Praesent a nisi a quam suscipit fringilla. Vivamus cursus hendrerit magna, sed vulputate nisi.</p>
-            <button class="carousel-button">See the product</button>
-        </div>
-        <div id="carousel-5" class="carousel-cell">
-            <!-- <img src=""> -->
-            <h3 class="carousel-heading">Our Experience</h3>
-            <p class="carousel-text">In sodales tortor eget erat convallis, a vestibulum massa commodo. Proin non nunc risus. Integer eget massa sed quam malesuada.</p>
-            <button class="carousel-button">See the product</button>
-        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
     <section id="sec--extra">
         <div id="extra-1">
@@ -106,7 +112,7 @@
         <div id="social"><img src=""><img src=""><img src=""></div>
     </footer>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="flickity.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js" defer></script>
 </body>
 </html>
