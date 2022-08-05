@@ -1,7 +1,7 @@
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
   // options
-  cellAlign: 'left',
+  cellAlign: 'right',
   contain: true
 });
 

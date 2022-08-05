@@ -164,6 +164,7 @@ footer {
     text-align: center;
 }
 
+
 @media (min-width: 1024px) {
     .mobile-hidden {
         display:block;
