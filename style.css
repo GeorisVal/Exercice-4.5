@@ -58,11 +58,13 @@ button {
 #intro--text {
     order: 2;
     margin: 1em;
+    margin-top: 3em;
+    margin-bottom: 2em;
 }
 
 
 #intro--image { 
-    width: 275px;
+    width: 80vw;
     height: 300px;
     border-radius: 50px;
     margin-right: 3em
@@ -155,8 +157,33 @@ button {
 
 #sec--extra {
     background-color: #805d33;
-    padding: 20px; 
+    padding-bottom: 1em;
     color: #FFF;
+    width: 80vw;
+}
+
+#extra-1 {
+    background-image: url('assets/img8.jpg');
+    background-size: cover;
+    margin: 1.5em;
+    width: 65vw;
+    height: 400px;
+}
+
+#extra-2 {
+    background-image: url('assets/img2.jpg');
+    background-size: cover; 
+    width: 65vw; 
+    height: 400px;
+    margin: 1.5em;
+}
+
+.extra-heading, .extra-text {
+    text-shadow: 1px 1px 0px #000;
+    padding: 0.5em;
+}
+.extra-heading {
+    padding-top: 10em;
 }
 
 footer {
@@ -194,4 +221,9 @@ footer {
 
 .swiper {
     width: 80vw;
+}
+
+.swiper-img {
+    width: 80vw;
+    border-radius: 15px;
 }
