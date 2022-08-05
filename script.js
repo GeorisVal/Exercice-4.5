@@ -13,3 +13,14 @@
   },
   })
 }
+
+const mediaQuery = window.matchMedia('(min-width: 768px)')
+
+function phoneChange(e) {
+  if (e.matches) {
+    console.log('It worky work !')
+  }
+}
+
+mediaQuery.addEventListener(phoneChange, null)
+phoneChange(mediaQuery)
