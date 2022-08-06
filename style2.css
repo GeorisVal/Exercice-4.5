@@ -13,6 +13,14 @@
     flex-direction: column;
 }
 
+button {
+    background-color: #e4cfb0;
+    padding: 0.8em;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
 body, html {
     width: 100vw;
     display: flex;
@@ -238,6 +246,31 @@ body, html {
 }
 /*END OF CAROUSEL - SWIPER STUFF*/
 
+/*EXTRA*/
+#sec--extra {
+    width: 100vw;
+    height: 350px;
+    background-color: #805d33;
+    color: #FFF;
+    display: flex;
+    text-shadow: 2px 2px 3px #000;
+}
+
+#extra-1 {
+    width: 75%;
+    height: 80%;
+    background-image: url('assets/img8.jpg');
+    background-clip:border-box;
+    background-position-x: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 2em;
+}
+
 .social-img {
     width: 30px;
 }
@@ -261,7 +294,30 @@ img {
     }
 
 /* Intro */
+#intro--text {
+    order: 1;
+    margin-right: 3em;
+}
 
+#sec--intro {
+    justify-content: center; 
+    align-items: center;
+}
+#intro--image {
+    order: 2;
+    position: relative;
+    left: 1.5em;
+    height: 40vh;
+}
+
+#intro--image-part {
+    width: 45vw;
+}
+
+#intro--image-text {
+    order: 3;
+    text-align: left;
+}
 
 /* Coffee-art */
     #coffee-art-text {
