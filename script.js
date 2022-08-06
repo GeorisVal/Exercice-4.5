@@ -14,13 +14,4 @@
   })
 }
 
-const mediaQuery = window.matchMedia('(min-width: 768px)')
-
-function phoneChange(e) {
-  if (e.matches) {
-    console.log('It worky work !')
-  }
-}
-
-mediaQuery.addEventListener(phoneChange, null)
-phoneChange(mediaQuery)
+new cursoreffects.fairyDustCursor({colors: ["#2d1111", "#be5d02", "#964b1b"]});
