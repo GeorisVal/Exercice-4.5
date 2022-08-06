@@ -17,6 +17,11 @@ body, html {
     margin: 1em;
 }
 
+li {
+    list-style: none;
+    margin-left: 3em;
+}
+
 button {
     background-color: #e4cfb0;
     padding: 0.8em;
@@ -60,7 +65,73 @@ button {
     padding-top: 2em;
 }
 
+#checkbox-burger {
+    position: absolute;
+    display: flex;
+    height: 32px;
+    width: 32px;
+    top: 16px;
+    right: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#burger--button {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lines {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+}
+
+#line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+#line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+#line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* #checkbox-burger:checked ~ .menu-items {
+    transform: translateX(0);
+} */
+
+#navbar input[type="checkbox"] ~ #line1 {
+    transform: rotate(45deg);
+}
+
+#checkbox-burger:checked ~ #line2 {
+    transform: scaleY(0);
+}
+
+#checkbox-burger:checked ~ #line3 {
+    transform: rotate(-45deg);
+}
+
+
 #navbar {
+    width: 100%;
+    display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
@@ -70,6 +141,19 @@ button {
     top: -10px;
     left: 15px;
     margin: 20px;
+}
+
+#menu--items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+#menu--items a {
+    text-decoration: none;
 }
 
 #intro--text {
@@ -154,14 +238,14 @@ button {
 }
 
 #coffee-art-image-1 {
-    width: 45vw;
+    max-width: 45vw;
     border-radius: 15px;
 }
 
 #coffee-art-image-2 {
     border-radius: 15px;
-    width: 45vw;
-    height: 32vh;
+    max-width: 25vw;
+    max-height: 33vh;
     object-fit:fill;
     z-index: 1
 }
@@ -169,7 +253,7 @@ button {
 #coffee-art-image-3 {
     grid-column: 1;
     border-radius: 15px;
-    width: 70vw;
+    max-width: 30vw;
 }
 
 
@@ -178,6 +262,8 @@ button {
     padding-bottom: 1em;
     color: #FFF;
     width: 80vw;
+    align-items: center;
+    justify-content: center;
 }
 
 #extra-1 {
@@ -254,23 +340,73 @@ footer {
 }
 
 @media (min-width: 800px) {
+    .desktop-hidden {
+        display: none;
+    }
+
     .mobile-hidden {
         display:block;
     }
+
 
     .flex-responsive {
         flex-direction: row;
     }
 
-    /* #header-logo {
-        right: 2px;
-    } */
+
+    #sec--intro {
+        justify-content: center; 
+        align-items: center;
+    }
 
     #intro--text {
         order: 1;
+        margin-right: 3em;
     }
 
     #intro--image {
         order: 2;
+        position: relative;
+        left: 1.5em;
+        height: 40vh;
+    }
+
+    #intro--image-text {
+        order: 3;
+        text-align: left;
+    }
+
+    #sec--coffee-art {
+        justify-content: center; 
+        align-items: center;
+    }
+
+    #coffee-art-image-1 {
+        max-width: 30vw;
+        border-radius: 15px;
+    }
+    
+    #coffee-art-image-2 {
+        border-radius: 15px;
+        max-width: 25vw;
+        max-height: 33vh;
+        object-fit:fill;
+        z-index: 1
+    }
+    
+    #coffee-art-image-3 {
+        grid-column: 1;
+        border-radius: 15px;
+        max-width: 30vw;
+    }
+
+    #sec--extra {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .extra-items {
+        width: 40vw;
+        height: 20vh;
     }
 }
