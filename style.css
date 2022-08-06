@@ -69,8 +69,8 @@ button {
     position: absolute;
     display: flex;
     height: 32px;
-    width: 32px;
-    top: 16px;
+    width: 33px;
+    top: 15px;
     right: 20px;
     z-index: 5;
     opacity: 0;
@@ -115,18 +115,6 @@ button {
 /* #checkbox-burger:checked ~ .menu-items {
     transform: translateX(0);
 } */
-
-#navbar input[type="checkbox"] ~ #line1 {
-    transform: rotate(45deg);
-}
-
-#checkbox-burger:checked ~ #line2 {
-    transform: scaleY(0);
-}
-
-#checkbox-burger:checked ~ #line3 {
-    transform: rotate(-45deg);
-}
 
 
 #navbar {
