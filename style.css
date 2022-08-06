@@ -19,7 +19,7 @@ body, html {
 
 li {
     list-style: none;
-    margin-left: 3em;
+    margin-top: 1em;
 }
 
 button {
@@ -129,19 +129,29 @@ button {
     top: -10px;
     left: 15px;
     margin: 20px;
+    z-index: 1;
 }
 
-#menu--items {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+#menu {
+    width: 100vw;
+    height: 20vh;
     position: absolute;
-    top: 20px;
-    right: 100px;
+    left:0;
+    top: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    box-shadow: 1px 1px 3px #000;
+    align-content: center;
+    justify-content: center;
+    transform: scaleY(0);
+    transition: transform 0.5s ease-in-out;
 }
 
-#menu--items a {
+#menu a {
     text-decoration: none;
+    color: #805d33
 }
 
 #intro--text {
@@ -328,6 +338,9 @@ footer {
 }
 
 @media (min-width: 800px) {
+    li {
+        margin-left: 3em;
+    }
     .desktop-hidden {
         display: none;
     }
@@ -341,7 +354,17 @@ footer {
         flex-direction: row;
     }
 
+    #menu {
+    flex-direction: row;
+    align-items: center;
+    top: 20px;
+    right: 100px;
+    transform: scaleY(1)
+    }
 
+    #checkbox-burger, #burger-button, .lines {
+        display: none;
+    }
     #sec--intro {
         justify-content: center; 
         align-items: center;
