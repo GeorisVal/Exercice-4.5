@@ -16,12 +16,15 @@
     <header>
         <nav class="navbar flex-row" id="navbar">
             <a href="#"><img src="assets/logo.png" class="logo" id="header-logo"></a>
-            <div id="burger--button"></div>
+            <div id="burger--button" class="desktop-hidden">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
                 <span class="line line3"></span>
-            <li class="mobile-hidden"><a href="#">Contact Us</a></li>
-            <li class="mobile-hidden"><button class="round-corners">Sign Up</button></li>
+            </div>
+            <div id="menu--items">
+                <li class="mobile-hidden"><a href="#">Contact</a></li>
+                <li class="mobile-hidden"><button class="round-corners">Sign Up</button></li>
+            </div>
         </nav>
     </header>
     <section id="sec--intro" class="flex-responsive max--width">
@@ -95,12 +98,12 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
-    <section id="sec--extra">
-        <div id="extra-1">
+    <section id="sec--extra" class="flex-responsive">
+        <div id="extra-1" class="extra-items">
             <h4 class="extra-heading">CRAZY COFFEE: Kopi Luwak</h4>
             <p class="extra-text">Poop coffee ! Nullam laoreet accumsan est ut sagittis. Fusce eget venenatis est, ut sodales ligula. Curabitur ac eleifend eros, vitae hendrerit velit.</p>
         </div>
-        <div id="extra-2">
+        <div id="extra-2" class="extra-items">
             <img src="">
             <h4 class="extra-heading">WE'RE HIRING</h4>
             <p class="extra-text">Suspendisse vel condimentum est, at congue purus. Donec mollis.</p>
@@ -115,6 +118,7 @@
                 <img src="assets/instagram.png" alt="Instagram" class="social-img"></div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
     <script src="script.js" defer></script>
 </body>
 </html>
