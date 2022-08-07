@@ -95,7 +95,8 @@ body, html {
         background-color: #FFF;
         text-align: center;
         transition: transform 0.4s ease-in-out;
-        transform: scaleY(0)
+        transform: scaleY(0);
+        padding-top: 2em;
     }
 
     #menu li {
@@ -292,10 +293,9 @@ footer {
     justify-content: center;
     text-align: center;
     margin-bottom: 2em;
-}
-footer a {
     margin-top: 2em;
 }
+
 #copyright {
     width: 50%;
     margin: 1em 0;
@@ -328,6 +328,25 @@ img {
     }
     .logo {
         width: 200px;
+    }
+    .desktop-hidden {
+        display: none;
+    }
+
+    #menu {
+        height: 30px;
+        transform: scaleY(1);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        right: 150px;
+        bottom: 20px;
+    }
+
+    .menu--items {
+        padding-left: 2em;
     }
 
 /* Intro */
@@ -371,4 +390,13 @@ img {
         height: 45%;
         width: 70%;
     }
+
+/* Footer */
+#copyright {
+    margin: 0 2em;
+}
+
+#social {
+    width: 15vw;
+}
 }
