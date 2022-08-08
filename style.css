@@ -370,13 +370,8 @@ img {
     position: relative;
     right: 0.5em;
     height: 40vh;
-<<<<<<< HEAD
-    max-height: 300px;
-    min-height: 250px;
-=======
     min-height: 250px;
     max-height: 300px;
->>>>>>> b7b2b414c2d3932428c57e5b3191a382fb0b6327
     border-radius: 15px;
 }
 
