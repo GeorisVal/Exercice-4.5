@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/*GENERAL STUFF*/
 * {
     margin: 0em;
     padding: 0;
@@ -29,6 +30,7 @@ body, html {
     flex-wrap: nowrap;
     font-family: 'Prompt', sans-serif;
 }
+/*END OF GENERAL STUFF*/
 
 /*NAVBAR*/
 #navbar {
@@ -242,7 +244,7 @@ body, html {
 
 .swiper-img {
     max-width: 80vw;
-    max-height: 40vh;
+    height: 20vh;
     border-radius: 15px;
 }
 /*END OF CAROUSEL - SWIPER STUFF*/
@@ -268,7 +270,7 @@ body, html {
     flex-direction: column;
     justify-content: flex-end;
     padding: 2em;
-    margin: 2em;
+    margin: 1.8em;
 }
 
 #extra-2 {
@@ -281,7 +283,7 @@ body, html {
     flex-direction: column;
     justify-content: flex-end;
     padding: 2em;
-    margin: 2em;
+    margin: 1.8em;
 }
 
 /*END OF EXTRA*/
@@ -331,6 +333,9 @@ img {
     }
     .desktop-hidden {
         display: none;
+    }
+    .mobile-hidden {
+        display:contents;
     }
 
     #menu {
